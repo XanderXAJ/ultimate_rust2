@@ -39,9 +39,13 @@ fn main() {
     //
     // Hint: .to_uppercase() is a method on `str` which returns a String
 
-    // let words = vec!["autobot", "beach", "car", "decepticon", "energon", "frothy"];
-    // let transformed...  // do the stuff here
-    // println!("Transformed: {:?}", transformed);
+    let words = vec!["autobot", "beach", "car", "decepticon", "energon", "frothy"];
+    let transformed = words
+        .into_iter()
+        .filter(|word| !word.contains('h'))
+        .map(|word| word.to_uppercase())
+        .collect::<Vec<_>>();
+    println!("Transformed: {:?}", transformed);
 
     // Challenge:
     //
