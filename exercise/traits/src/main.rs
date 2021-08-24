@@ -14,7 +14,7 @@ pub struct Party {
 
 impl Default for Party {
     fn default() -> Self {
-        Party {
+        Self {
             at_restaurant: true,
             num_people: 8,
             cake: Cake::Chocolate,
