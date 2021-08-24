@@ -8,6 +8,7 @@
 // 2. What about an image!? Add an image of a pumpkin to the end of the module-level documentation.
 // The markdown format is ![some alt text](https://url-to-the-image.png)
 // Here's the image to link to: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/FrenchMarketPumpkinsB.jpg/700px-FrenchMarketPumpkinsB.jpg
+//! ![a pile of pumpkins](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/FrenchMarketPumpkinsB.jpg/700px-FrenchMarketPumpkinsB.jpg)
 
 // 3. Document the Pumpkin struct.
 // - The description on the index page should be "Big orange thing"
