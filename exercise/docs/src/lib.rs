@@ -17,8 +17,17 @@
 // - Document the "roundness" field, explaining that it is a percentage
 // - Document the "orangeness" field, explaining that it is a number from 8 to 27
 
+/**
+Big orange thing
+
+# Recipes
+
+Coming soon.
+**/
 pub struct Pumpkin {
+    /// Roundness, expressed as a percentage
     pub roundness: f32,
+    /// Orangeness, on a scale of 8 to 27
     pub orangeness: i32,
 }
 
