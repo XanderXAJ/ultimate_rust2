@@ -5,10 +5,21 @@ pub enum Cake {
     Spice,
 }
 
+#[derive(Debug)]
 pub struct Party {
     pub at_restaurant: bool,
     pub num_people: u8,
     pub cake: Cake,
+}
+
+impl Default for Party {
+    fn default() -> Self {
+        Party {
+            at_restaurant: true,
+            num_people: 8,
+            cake: Cake::Chocolate,
+        }
+    }
 }
 
 fn main() {
@@ -45,7 +56,7 @@ fn main() {
     // Hint: If you get stuck, there is an example at
     // https://doc.rust-lang.org/std/default/trait.Default.html#how-can-i-implement-default
 
-    // println!("The default Party is\n{:#?}", Party::default());
+    println!("The default Party is\n{:#?}", Party::default());
 
     // 4. You prefer Maple Bacon cake. Use "struct update syntax" to create a Dessert with `cake`
     // set to `Cake::MapleBacon`, but the rest of the values are default.
