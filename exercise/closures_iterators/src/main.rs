@@ -6,8 +6,8 @@ fn main() {
     // number multiplied by itself), and assign the closure to the "square" variable. Then run the
     // code and make sure it works.
 
-    // let square = ...
-    // println!("5 squared is {}", square(5));
+    let square = |input| input * input;
+    println!("5 squared is {}", square(5));
 
     // 2. Uncomment the code below.  Finish the .map() iterator adaptor call by passing it a closure
     // which takes a tuple of two integers as a parameter, and returns a tuple with the first
@@ -34,7 +34,6 @@ fn main() {
     let mut numbers = vec![1, 2, 3, 4];
     numbers.iter_mut().for_each(|x| *x *= 3);
     println!("{:?}", numbers); // should print [3, 6, 9, 12]
-
 
     // 4. Uncomment the code below.  Take the vector of words and
     // - Convert the vector into an iterator with .into_iter()
