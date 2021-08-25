@@ -46,6 +46,21 @@ mod test {
     // - splish(100, 10) is negative
     // - splish(40, 20) is positive
     // - splish(9, 3) is 0
+
+    #[test]
+    fn splish_negative() {
+        assert!(splish(100, 10) < 0);
+    }
+
+    #[test]
+    fn splish_positive() {
+        assert!(splish(40, 20) > 0);
+    }
+
+    #[test]
+    fn splish_zero() {
+        assert_eq!(splish(9, 3), 0);
+    }
 }
 
 // 4. Create a `tests/` directory and an integration test file `tests/more_tests.rs`
