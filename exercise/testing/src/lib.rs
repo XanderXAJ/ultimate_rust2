@@ -27,6 +27,20 @@ mod test {
     //
     // `cargo test` should run your tests and pass
     // Hint: Don't forget the `#[test]` attribute for your test function!
+    #[test]
+    fn sploosh_splooshes_a_particular_way() {
+        assert_eq!(sploosh(1, 2, 3), 4);
+    }
+
+    #[test]
+    fn sploosh_does_not_sploosh_a_particular_way() {
+        assert_ne!(sploosh(4, 5, 6), 4);
+    }
+
+    #[test]
+    fn sploosh_negative_number_gives_99() {
+        assert_eq!(sploosh(-1, -1, -1), 99);
+    }
 
     // 4. Write a test function that verifies the following conditions using the `assert!` macro
     // - splish(100, 10) is negative
