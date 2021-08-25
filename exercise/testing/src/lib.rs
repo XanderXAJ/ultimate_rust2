@@ -17,6 +17,7 @@ pub fn splish(a: i32, b: i32) -> i32 {
 mod test {
     // 2. Bring all the library items into scope with a `use` statement
     // Hint: It's okay to use `*` here.
+    use super::*;
 
     // 3. Write a test function that verifies the following condition using the `assert_eq!` or
     // `assert_ne!` macros
